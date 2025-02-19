@@ -10,7 +10,6 @@ import {
 import OAuth from '../components/OAuth';
 
 export default function SignIn() {
-  console.log("Hai")
   const [formData, setFormData] = useState({});
   const { loading, error: errorMessage } = useSelector((state) => state.user);
   const dispatch = useDispatch();
@@ -50,13 +49,12 @@ export default function SignIn() {
         <div className='flex-1'>
           <Link to='/' className='font-bold dark:text-white text-4xl'>
             <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>
-              Sahand's
+            Jenitta's
             </span>
             Blog
           </Link>
           <p className='text-sm mt-5'>
-            This is a demo project. You can sign in with your email and password
-            or with Google.
+            This is a demo project. You can sign in with your email and password.
           </p>
         </div>
         {/* right */}
@@ -95,7 +93,7 @@ export default function SignIn() {
                 'Sign In'
               )}
             </Button>
-            <OAuth />
+            {/* <OAuth /> */}
           </form>
           <div className='flex gap-2 text-sm mt-5'>
             <span>Dont Have an account?</span>

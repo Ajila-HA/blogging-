@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
     "@reduxjs/toolkit": "^2.0.1",
     "firebase": "^10.7.1",
     "flowbite-react": "^0.7.0",
